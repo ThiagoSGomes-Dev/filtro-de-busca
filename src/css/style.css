@@ -1,0 +1,133 @@
+body {
+  font-size: 1.6rem;
+  background-color: var(--app-height);
+}
+
+body * {
+  font-family: sans-serif;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border-width: 0;
+  white-space: nowrap;
+}
+
+header {
+  text-align: center;
+  color: #FFFFFF;
+
+  padding: 3.2rem;
+
+  max-width: 46rem;
+  margin: auto;
+}
+
+h1 {
+  opacity: .9;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+header input {
+  margin-top: 2rem;
+  padding: 1rem 1.6rem;
+  border-radius: 0.8rem;
+
+  background-color: #444448;
+  border: 0;
+
+  width: 100%;
+  color: #FFFFFF;
+
+  font-size: 1.6rem;
+}
+
+.input-wrapper i {
+  position: absolute;
+  right: 1.2rem;
+  bottom: 1.2rem;
+}
+
+main {
+  margin: 3.2rem auto;
+  padding-inline: 3.2rem;
+  max-width: 70rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+
+  list-style: none;
+}
+
+ul:has(li:hover) li:not(:hover) {
+  opacity: .6;
+  scale: .98;
+}
+
+.cards li {
+  flex: 1;
+  background-color: var(--gray-300);
+  padding: 2.8rem;
+
+  border-radius: 0.8rem;
+  padding: 2.8rem;
+  color: #FFFFFF;
+
+  transition: all .2s;
+}
+
+.cards .header i {
+  font-size: 2.4rem;
+
+  background-color: var(--primary-400);
+  color: var(--gray-900);
+
+  border-radius: 50%;
+  padding: .4rem;
+
+  transition: all .2s;
+}
+
+.cards li .header {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.cards li .header h2 {
+  opacity: .9;
+}
+
+.cards li p {
+  padding-top: 1.6rem;
+  opacity: .5;
+}
+
+li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFFFFF;
+
+  font-weight: bold;
+  font-size: 1.6rem;
+
+  margin-top: 1.6rem;
+
+  transition: color .2s;
+}
+
+li a:hover {
+  color: var(--primary-200);
+}
